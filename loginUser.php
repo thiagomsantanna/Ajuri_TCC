@@ -42,7 +42,7 @@ if($btnLogin){
                     $sql2="SELECT uf FROM estados WHERE id=$cod_estado";
                     $sql3="SELECT nome_cidades FROM cidades WHERE id=$cod_cidade";
 				
-					$sql4="SELECT area_direito FROM TB_AREAS_DIREITO WHERE ID_AREA=$cod_area_direito";
+					$sql4="SELECT area_direito FROM tb_areas_direito WHERE ID_AREA=$cod_area_direito";
 
                     $result = mysqli_query($conn,$sql2);
                     $result2 = mysqli_query($conn,$sql3);
@@ -74,7 +74,7 @@ if($btnLogin){
 				}else{
 					
 					$_SESSION['msg'] = "<div class='alert alert-danger'><i class='far fa-times-circle'></i>&nbsp;Login ou senha incorreto!</div>";
-					header("Location: loginTeste.php");
+					header("Location: index.php");
 	
 				}
 
@@ -125,7 +125,7 @@ if($btnLogin){
 				}else{
 					
 					$_SESSION['msg'] = "<div class='alert alert-danger'><i class='far fa-times-circle'></i>&nbsp;Login ou senha incorreto!</div>";
-					header("Location: loginTeste.php");
+					header("Location: index.php");
 	
 				}
 			}
@@ -134,14 +134,14 @@ if($btnLogin){
 	}else{
 
 		$_SESSION['msg'] = "<div class='alert alert-danger'><i class='fas fa-exclamation-circle'></i>&nbsp;Preencha os Campos!</div>";
-		header("Location: loginTeste.php");
+		header("Location: index.php");
 
 	}
 
 }else{
 
 	$_SESSION['msg'] = "<div class='alert alert-danger'><i class='far fa-times-circle'></i>&nbsp;Página não encontrada</div>";
-	header("Location: loginTeste.php");
+	header("Location: index.php");
 
 }
 

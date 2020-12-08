@@ -297,7 +297,7 @@ swal({
   
             <h2>Bem-Vindo ao Ajuri!</h2>
               
-              <a href="loginTeste.php" class="linkRegistro">
+              <a href="index.php" class="linkRegistro">
                 <h4>Faça Login para acessar.</h4>
               </a>
               <br>

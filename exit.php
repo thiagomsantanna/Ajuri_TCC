@@ -4,6 +4,6 @@ session_start();
 session_destroy();
 
 $_SESSION['msg'] = "<div class='alert alert-success'>Deslogado com sucesso!</div>";
-header("Location: loginTeste.php");
+header("Location: index.php");
 
 ?>

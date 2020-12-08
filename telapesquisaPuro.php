@@ -30,7 +30,8 @@ $dadosArea = mysqli_fetch_array($resultArea);
     <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="jquery.dataTables.js"></script>
-    
+    <script href="https://cdn.datatables.net/responsive/2.2.6/js/dataTables.responsive.min.js"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="css/nucleo-svg.css" rel="stylesheet" />
     <link href="css/argon-design-system.css" rel="stylesheet" />
@@ -39,6 +40,8 @@ $dadosArea = mysqli_fetch_array($resultArea);
     <link href="css/font-awesome.css" rel="stylesheet" />
     <link href="css/nucleo-svg.css" rel="stylesheet" />
     <link href="css/tabletestemaxify.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.dataTables.min.css" rel="stylesheet">
+    
 
     <link href="css/bootstrap.min.css" rel=stylesheet type="text/css">
 <style>
@@ -621,13 +624,14 @@ $(document).ready(function() {
         },
 
         responsive: true
-
+  
     } );
 } );
 
 </script>
 
-<table id="example" class="display table table-bordered table-striped" style="width:100%;margin-left:-30px">
+
+<table id="example" class="display table table-bordered table-striped" style="width:100% !important">
 <thead>
       <tr>
         

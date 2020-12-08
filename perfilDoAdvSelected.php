@@ -12,6 +12,7 @@ $dadosPerfil=mysqli_fetch_array($resultPerfil);
     $foto=$dadosPerfil["IMAGEM"];
     $tel=$dadosPerfil["TELEFONE"];
     $nome=$dadosPerfil["NOME"];
+	$email=$dadosPerfil["EMAIL"];
     $arroba=$dadosPerfil["USERNAME"];
     $estado=$dadosPerfil["COD_ESTADO"];
     $cidade=$dadosPerfil["COD_CIDADE"];
@@ -648,6 +649,7 @@ dummy {
               <h3><?php echo "<strong>".$nome."</strong>";?><span class="font-weight-light">,<?php echo "&nbsp;<strong>".$age."</strong>";?></span></h3>
 				<!--username-->
       <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i><i class="fas fa-user"></i>&nbsp;-&nbsp;<?php echo "@<strong>".$arroba."</strong>";?></div>
+	  	  <div class="h6 font-weight-300"><?php echo "<a href='mailto:$email?Subject=Advogado%20Ajuri&body=Olá,%20vi%20seu%20perfil%20no Ajuri!'>";?><i class="fas fa-envelope-open-text"></i>&nbsp;-&nbsp;<?php echo "@<strong>".$email."</strong>";?></a></div>
       <!-- telefone -->
       
 				<!--Cidade e Estado-->

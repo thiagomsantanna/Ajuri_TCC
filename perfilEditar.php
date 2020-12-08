@@ -744,7 +744,7 @@ function perfilError(){
                     <div class="form-group">
                     <center>
                     <div class="col-md-6">
-                    <label for="area_direito" style="float:left !important"><i class="fas fa-user-graduate"></i>&nbsp;-&nbsp;Area Direito:</label>
+                    <label for="area" style="float:left !important"><i class="fas fa-user-graduate"></i>&nbsp;-&nbsp;Área de Direito:</label>
                     <select name="area" id="area" class="form-control" required>
                       <option value="" selected>Área de Direito:</option>
                         <?php

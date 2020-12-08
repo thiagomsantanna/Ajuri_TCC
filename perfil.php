@@ -1,6 +1,7 @@
 <?php
     session_start();
 
+	$email = $_SESSION['EMAIL'];
     /*variavel de local das fotos de perfil*/
     $pastaArquivos='fotodeperfil/';
 
@@ -601,11 +602,26 @@ dummy {
 				<!--username-->
       <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i><i class="fas fa-user"></i>&nbsp;-&nbsp;<?php echo "@<strong>".$_SESSION['USERNAME']."</strong>";?></div>
       <!-- telefone -->
-      
+      <div class="h6 font-weight-300"><i class="fas fa-envelope-open-text"></i>&nbsp;-&nbsp;<?php echo "@<strong>".$_SESSION['EMAIL']."</strong>";?></div>
 				<!--Cidade e Estado-->
               <div class="h6 font-weight-300"><i class="ni location_pin mr-2"></i><i class="fas fa-map-marker-alt"></i>&nbsp;-&nbsp;<?php echo $_SESSION['NOME_ESTADO'];?> - <?php echo $_SESSION['NOME_CIDADE'];?></div>
 
-              <?php include_once("divsFormacao_AreaDireito.php"); ?>
+<?php 
+
+if($_SESSION['TIPO'] == "advogado"){
+        //Especialidade//
+          echo "<div class='h6 mt-4'><i class='fas fa-user-graduate'></i>&nbsp;-&nbsp;<strong>".$_SESSION['area_direito']."</strong></div>";
+        //Formação ou onde se formou//
+          echo "<div><i class='ni education_hat mr-2'></i>".$_SESSION['LUGAR_FORMACAO']."</div>";
+}else{
+
+        //Especialidade
+        echo "<div class='h6 mt-4'></div>";
+        //Formação ou onde se formou
+        echo "<div></div>";
+}
+
+?>
             </div>
             <div class="mt-5 py-5 border-top text-center">
               <div class="row justify-content-center">

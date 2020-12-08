@@ -38,8 +38,8 @@
         require "conexao.php";
 
         /* 2-Definindo o comando sql a ser usado */
-      $sql = "insert into tbadvogados (NOME, USERNAME, TELEFONE, DATANASC, EMAIL, SENHA, COD_ESTADO, COD_CIDADE, IMAGEM,  COD_AREA_DIREITO, LUGAR_FORMACAO, TIPO) 
-      values ('$nome', '$nomeUsuario', '$telefone', '$data', '$email', '$senha', '$estado', '$cidade', '$nomeArquivo', '$area', '$formacao', 'advogado')";
+      $sql = "insert into tbadvogados (NOME, USERNAME, TELEFONE, DATANASC, EMAIL, SENHA, COD_ESTADO, COD_CIDADE, DESCRICAO, IMAGEM,  COD_AREA_DIREITO, LUGAR_FORMACAO, TIPO) 
+      values ('$nome', '$nomeUsuario', '$telefone', '$data', '$email', '$senha', '$estado', '$cidade', 'Edite seu perfil para adicionar uma descrição!', '$nomeArquivo', '$area', '$formacao', 'advogado')";
 
 			$result = mysqli_query($conn,$sql);
 			
